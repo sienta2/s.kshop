@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品一覧 - NeoStore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark">
+    <header>
+        <h1 class="neon-text">商品一覧</h1>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2 class="neon-text">おすすめ商品</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <span class="product-name">プレミアムコーヒー</span>
+                    <span class="product-price">￥0</span>
+                    <button class="button neon-button buy-button">購入</button>
+                </div>
+                <div class="product-item">
+                    <span class="product-name">オーガニック紅茶</span>
+                    <span class="product-price">￥0</span>
+                    <button class="button neon-button buy-button">購入</button>
+                </div>
+                <div class="product-item">
+                    <span class="product-name">クラシックチョコレート</span>
+                    <span class="product-price">￥0</span>
+                    <button class="button neon-button buy-button">購入</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('.buy-button').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('ご購入ありがとうございました！');
+            });
+        });
+    </script>
+</body>
+</html>

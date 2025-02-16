@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kapiweb - 検索結果</title>
+</head>
+<body>
+    <h1>検索結果</h1>
+    <p>「{{ query }}」の検索結果:</p>
+    {% if results %}
+        <ul>
+            {% for result in results %}
+                <li>{{ result }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>該当する結果はありませんでした。</p>
+    {% endif %}
+    <a href="/">戻る</a>
+</body>
+</html>
